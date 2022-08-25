@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UserInterface.FileViewController">
+   <top>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="File Upload">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="300.0" prefWidth="279.0">
+               <children>
+                  <Button fx:id="btnchooseRestFile" mnemonicParsing="false" text="Upload Resturants File" />
+                  <ListView prefHeight="200.0" prefWidth="200.0" />
+               </children>
+            </VBox>
+            <VBox prefHeight="300.0" prefWidth="278.0">
+               <children>
+                  <Button mnemonicParsing="false" text="Upload Area of Service File" />
+                  <ListView prefHeight="200.0" prefWidth="200.0" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </center>
+   <bottom>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="100.0" prefWidth="219.0">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="196.0" text="Run Mapping Algorithm" />
+                  <Button mnemonicParsing="false" text="Start Over" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>

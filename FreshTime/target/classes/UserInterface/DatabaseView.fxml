@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UserInterface.DatabaseViewController">
+   <top>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="100.0" prefWidth="206.0">
+               <children>
+                  <Label text="Mongo Database Connection " />
+                  <Label text="Connected to : " />
+                  <Label prefHeight="17.0" prefWidth="168.0" text="Display cluster info here" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </top>
+   <left>
+      <VBox prefHeight="300.0" prefWidth="180.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="17.0" prefWidth="69.0" text="Database" />
+            <TextField promptText="Database Name" />
+            <Label text="Restaurant Collection Name" />
+            <TextField promptText="Collection Name" />
+            <Label text="Area of Service Collection Name" />
+            <TextField promptText="Collection Name" />
+            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="184.0" text="Upload Data" />
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="300.0" prefWidth="161.0">
+               <children>
+                  <Label text="Restaurants " />
+                  <ListView prefHeight="200.0" prefWidth="200.0" />
+               </children>
+            </VBox>
+            <VBox prefHeight="300.0" prefWidth="173.0">
+               <children>
+                  <Label text="Area of Service Locations" />
+                  <ListView prefHeight="200.0" prefWidth="200.0" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </center>
+   <bottom>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="100.0" prefWidth="188.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#gotoGraphView" text="Run Mapping Algorithm" />
+                  <Button mnemonicParsing="false" text="Start over" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>
